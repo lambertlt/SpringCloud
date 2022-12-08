@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>SpringCloud</artifactId>
+        <groupId>com.lambert.parent</groupId>
+        <version>1.0-SPRNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <!--    <groupId>SpringCloud-common</groupId>-->
+    <artifactId>SpringCloud-common</artifactId>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <jpa.version>2.5.4</jpa.version>
+        <mysql.connector.java.version>8.0.26</mysql.connector.java.version>
+        <spring.boot.starter.version>2.3.7.RELEASE</spring.boot.starter.version>
+        <spring.boot.starter.web.version>2.3.7.RELEASE</spring.boot.starter.web.version>
+        <spring.boot.maven.plugins.version>2.3.7.RELEASE</spring.boot.maven.plugins.version>
+        <swagger.version>2.6.1</swagger.version>
+        <spring.cloud.starter.netflix.eureka.server.version>2.2.6.RELEASE
+        </spring.cloud.starter.netflix.eureka.server.version>
+    </properties>
+
+    <dependencies>
+        <!--      springboot starter      -->
+        <!--            <dependency>-->
+        <!--                <groupId>org.springframework.boot</groupId>-->
+        <!--                <artifactId>spring-boot-starter</artifactId>-->
+        <!--                <version>${springboot.starter.version}</version>-->
+        <!--            </dependency>-->
+        <!--      springboot test      -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.junit.vintage</groupId>
+                    <artifactId>junit-vintage-engine</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!--    web服务    -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>${spring.boot.starter.web.version}</version>
+        </dependency>
+        <!--swagger文档-->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
+        <!--    lombook    -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <!--      fegin      -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <version>;</version>
+        </dependency>
+        <!--      springcloud      -->
+        <!--            <dependency>-->
+        <!--                <groupId>org.springframework.cloud</groupId>-->
+        <!--                <artifactId>spring-cloud-dependencies</artifactId>-->
+        <!--                <version>${spring.cloud.version}</version>-->
+        <!--                <type>pom</type>-->
+        <!--                <scope>import</scope>-->
+        <!--            </dependency>-->
+    </dependencies>
+</project>
