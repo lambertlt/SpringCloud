@@ -3,6 +3,8 @@ HELP.md
 *.lst
 #./**/target/*.jar
 #./**/*.jar
+**/.DS_Store
+.DS_Store
 #./**/*.original
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
